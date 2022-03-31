@@ -1,0 +1,2 @@
+# Toxicity Analysis for Talk Edit page in Wikipedia
+Built a text classifier using NLP and the Support vector classifier (SVC) model in Python to determine toxic comments in the Talk edit pages on Wikipedia for a 70:30 data set split.
