@@ -1,0 +1,9 @@
+-Built a Sentiment Analysis model using TextBlob which is a lexicon-based approach where sentiment is measured by the semantic orientation and intensity 
+of each word in the sentence.TextBlob produces a sentiment polarity score between -1 to +1 to measure how negative or positive a sentence is and also a
+subjectivity score to measure how opinionated a sentence is.
+
+-Threshold setting for sentiment class division: Negative <0 
+                                                Neutral ==0
+                                                Positive >0
+                                                
+-Using the threshold the percentage of Positive comments obtained was almost 50% , 15% for Negative comments and 35% Neutral.
