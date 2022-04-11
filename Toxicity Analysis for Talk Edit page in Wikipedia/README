@@ -1,7 +1,7 @@
-•	Built a text classifier from scratch using NLP text processing and the Support vector classifier (SVC) model in Python to determine toxic comments
+Built a text classifier from scratch using NLP text processing and the Support vector classifier (SVC) model in Python to determine toxic comments
 in the Talk edit pages on Wikipedia for a 70:30 data set split on the Wikipedia comments dataset acquired from Kaggle. 
 
-•	Used Grid search model to Hyper-parameter tunning to optimize the SVC model, resulting in an 86% accuracy in toxic text classification 
+Used Grid search model to Hyper-parameter tunning to optimize the SVC model, resulting in an 86% accuracy in toxic text classification 
 using only 4000 features which improved to over 95% using all the features available.
 
 
