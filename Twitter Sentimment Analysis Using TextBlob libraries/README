@@ -1,9 +1,81 @@
--Built a Sentiment Analysis model using TextBlob which is a lexicon-based approach where sentiment is measured by the semantic orientation and intensity 
-of each word in the sentence.TextBlob produces a sentiment polarity score between -1 to +1 to measure how negative or positive a sentence is and also a
-subjectivity score to measure how opinionated a sentence is.
+## Sentiment Analysis Model Using TextBlob##
 
--Threshold setting for sentiment class division: Negative <0 
-                                                Neutral ==0
-                                                Positive >0
-                                                
--Using the threshold the percentage of Positive comments obtained was almost 50% , 15% for Negative comments and 35% Neutral.
+**Introduction:**
+
+Sentiment Analysis is a critical tool in the domain of Natural Language Processing (NLP) and has numerous applications in analyzing online opinions,
+reviews, and social media. In this project, a Sentiment Analysis model is developed using TextBlob, a Python library for processing textual data. 
+
+**Objective:** The primary objective is to analyze a dataset of tweets and categorize them into negative, neutral, and positive sentiment classes
+based on the generated polarity score. The threshold settings for sentiment class division are as follows:
+
+Negative: Polarity < 0
+Neutral: Polarity == 0
+Positive: Polarity > 0
+
+**TextBlob Function:**
+
+TextBlob is an open-source Python library that provides a simple API for natural languages processing tasks, such as part-of-speech tagging,
+noun phrase extraction, sentiment analysis, classification, translation, and more. It is built on top of the NLTK (Natural Language Toolkit)
+library and provides additional functionality and ease of use for handling textual data.
+
+The TextBlob library offers several pre-trained functions, one of which is the sentiment analysis function. The sentiment analysis function 
+in TextBlob works based on a pre-built lexicon that contains a list of words, each with their corresponding polarity and subjectivity scores.
+Polarity scores range from -1 (negative sentiment) to +1 (positive sentiment), while subjectivity scores range from 0 (objective) to 1 (subjective).
+The function calculates the sentiment of a given text by analyzing the words in the text and aggregating their scores.
+
+Here's a brief overview of how TextBlob's sentiment analysis function works:
+
+    a. Tokenization: The input text is split into individual words (tokens).
+    b. Sentiment Calculation: Each token's polarity and subjectivity scores are looked up in the pre-built lexicon.
+    If a word is not found in the lexicon, it's assigned a default score of zero.
+    c. Aggregation: The scores for all tokens in the text are aggregated to compute the overall polarity and subjectivity
+    scores for the entire text.
+    
+**Step-by-Step Process:**
+
+  1. Imported the necessary libraries, such as pandas, numpy, re, TextBlob, matplotlib, and WordCloud.
+  
+  2. Loaded the dataset, a CSV file containing tweets using pandas and created a data frame.
+  
+  3. Performed data cleaning by removing unnecessary elements such as @mentions, hashtags, RT (retweets), and hyperlinks using regular expressions.
+  
+  4. Defined functions to calculate subjectivity and polarity scores for each tweet using TextBlob.
+  
+  5. Added the subjectivity and polarity scores to the Data Frame as new columns.
+  
+  6. Created a Word-Cloud visualization to display the most frequent words in the dataset.
+  
+  7. Defined a function to compute sentiment analysis based on the polarity score, and added a new column 'Analysis' to a data frame.
+  
+  8. Sorted and printed positive and negative tweets.
+  
+  9. Plotted the polarity and subjectivity scores using a scatterplot.
+  
+  10. Calculated and displayed the percentage of positive and negative tweets.
+  
+  11. Plotted the sentiment analysis results using a bar chart.
+  
+**Results and Analysis:**
+
+The model categorizes the tweets into negative, neutral, and positive sentiment classes, displaying the following distribution:
+Positive: 50%
+Negative: 15%
+Neutral: 35%
+
+**Performance:**
+
+TextBlob, a lexicon-based method, provides a simple yet effective approach to perform sentiment analysis on the dataset. Although it may not 
+be as accurate as more complex machine learning-based methods, its ease of use and fast processing time make it suitable for initial exploratory
+analysis.
+
+**Optimization:**
+
+In the future, the model can be improved by fine-tuning the lexicon, incorporating more complex algorithms, or even employing deep learning
+techniques such as recurrent neural networks (RNNs) or transformers for more accurate sentiment analysis.
+
+**Conclusion:**
+
+In conclusion, this project successfully demonstrated the application of two distinct methods, a lexicon-based approach using TextBlob and
+a deep learning model using BERT, for sentiment analysis on a dataset of tweets. The TextBlob method provided a straightforward and fast way
+to categorize tweets into negative, neutral, and positive sentiments, while the BERT-based model offered a more advanced and accurate solution
+for sentiment classification.
