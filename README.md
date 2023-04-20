@@ -2,7 +2,7 @@
 
 1. Toxicity Analysis for Talk Edit page in Wikipedia
 
-## Sentiment Analysis Model Using TextBlob##
+## Tweeter Sentiment Analysis Model Using TextBlob
 
 **Introduction:**
 
@@ -88,5 +88,3 @@ for sentiment classification.
 
 1. Loria, S. (2018). TextBlob: Simplified Text Processing. Retrieved from https://textblob.readthedocs.io/en/dev/
   
-
-
