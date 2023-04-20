@@ -79,3 +79,8 @@ In conclusion, this project successfully demonstrated the application of two dis
 a deep learning model using BERT, for sentiment analysis on a dataset of tweets. The TextBlob method provided a straightforward and fast way
 to categorize tweets into negative, neutral, and positive sentiments, while the BERT-based model offered a more advanced and accurate solution
 for sentiment classification.
+
+**Citations:**
+
+1. Loria, S. (2018). TextBlob: Simplified Text Processing. Retrieved from https://textblob.readthedocs.io/en/dev/
+
